@@ -1,88 +1,84 @@
-.navbar {
+.home {
     width: 100%;
-    height: 100px;
-    background: #6a46e0;
-  }
-  
-  .links {
-    width: 100%;
-    height: 100%;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    color: white;
+    font-family: "Arial", sans-serif;
+    color: black;
   }
   
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    margin: 20px;
-    font-size: 25px;
-  }
-  
-  .toggleButton {
+  .about {
     width: 100%;
-    height: 100px;
+    height: calc(100vh - 100px);
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  
-  .toggleButton svg {
-    font-size: 50px;
-  }
-  .toggleButton button {
-    margin-right: 20px;
-    background-color: transparent;
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
-  
-  #open {
-    height: 100vh;
-  }
-  
-  #open .links {
     flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 100px;
-  }
-  
-  #open a {
-    width: 100%;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    background-color: #996633;
+    color: #f0f0f0;
   }
   
-  @media only screen and (max-width: 900px) {
-    .navbar a {
-      width: 70px;
-    }
+  .about h2 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    color: #e9d35b;
+    height: 50px;
+  }
+
+  .about resume-link {
+    color: white;
+  }
+  
+  .about .prompt {
+    width: 40%;
+    font-size: 30px;
+  }
+  .prompt svg {
+    font-size: 60px;
+    margin: 5px;
+    color: white;
+  }
+  
+  .skills {
+    font-size: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skills h1 {
+    color: #3e497a;
+  }
+  
+  .skills .list {
+    list-style: none;
+    width: 60%;
+  }
+  
+  .list span {
+    font-size: 20px;
   }
   
   @media only screen and (max-width: 600px) {
-    .toggleButton {
-      display: flex;
-    }
-    #close a {
-      display: none;
-    }
-  }
-  
-  @media only screen and (min-width: 600px) {
-    .toggleButton {
-      display: none;
+    .about h2 {
+      font-size: 40px;
     }
   
-    .hiddenLinks {
-      display: none;
+    .about .prompt {
+      margin-top: 10px;
+      font-size: 20px;
+      width: 80%;
     }
   
-    #open {
-      height: 100px;
+    .skills {
+      text-align: center;
+    }
+    .list {
+      padding: 0;
     }
   
-    #open .links {
-      flex-direction: row;
+    .skills h2 {
+      font-size: 30px;
     }
   }

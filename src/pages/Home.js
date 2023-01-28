@@ -1,11 +1,15 @@
+import React from 'react';
+
+import "../styles/Home.css";
+
 function Home() {
-        return (
-          <div className="home">
-            <h2>Home Page</h2>
-            
+  return (
+    <div className='home'>
+      <div className='about'>
+        <h2> CISC 322/326 - Software Architecture </h2>
           </div>
-        );
-      
-  }
-  
-  export default Home;
+    </div>
+  );
+}
+
+export default Home;

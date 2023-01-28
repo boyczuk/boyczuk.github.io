@@ -1,8 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home'
-import AboutUs from './pages/AboutUs'
-import Assignments from './pages/Assignments'
+import Assessments from './pages/Assessments'
+import About from './pages/About'
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -13,8 +13,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/Projects & Presentations" element={<Assignments />} />
-          <Route path="/About Us" element={<AboutUs />} />
+          <Route path="/assessments" element={<Assessments />} />
+          <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
       </Router>
