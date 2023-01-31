@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "boyczuk.github.io/boyczuk.github.io/precache-manifest.07c7589a337c896e88c7f9fb4f377c80.js"
+  "/ftx/precache-manifest.af9d684f4fb606deb94c439cc0eb9eb4.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("boyczuk.github.io/boyczuk.github.io/index.html", {
+workbox.routing.registerNavigationRoute("/ftx/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
